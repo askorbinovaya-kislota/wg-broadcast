@@ -1,0 +1,8 @@
+#!/sbin/openrc-run
+
+supervisor=supervise-daemon
+command="/etc/kislota-cloud/wg-broadcast.py"
+
+depend() {
+    need net
+}
